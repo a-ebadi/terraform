@@ -1,11 +1,13 @@
 module "ec2_ali" {
   source        = "./module/ec2"
   instance_name = "v11"
+  key_name      = "dvh"
 }
 
 module "ec2_ali2" {
   source        = "./module/ec2"
   instance_name = "v11_2"
+  key_name      = "dvh"
 }
 
 # resource "aws_instance" "ali" {
